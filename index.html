@@ -21,8 +21,8 @@
                 </div>
                 <div class="flex items-center bg-[#F4F7FF]">
                     <img class="w-8 h-8 mr-2" src="assets/checkbox.png" alt="">
-                    <h1 class="text-[#00303C] text-3xl font-bold mr-11">23</h1>
-                    <button><img src="assets/theme-btn.png" alt=""></button>
+                    <h1 id="total-task-done" class="text-[#00303C] text-3xl font-bold mr-11">23</h1>
+                    <button id="color-btn"><img src="assets/theme-btn.png" alt=""></button>
                 </div>
             </div>
         </nav>
@@ -36,7 +36,7 @@
                         <img src="assets/checkbox.png" alt="">
                         <div>
                             <p class="text-[#00303C] text-base font-medium">Task Assigned</p>
-                            <h1 class="text-[#00303C] text-3xl font-bold">05</h1>
+                            <h1 id="task-assigned" class="text-[#00303C] text-3xl font-bold">05</h1>
                         </div>
                     </div>
                     <!-- Discover -->
@@ -49,7 +49,7 @@
                     <div class="flex items-center justify-center gap-5 bg-[#F4F7FF] mt-5">
                         <img class="w-7 h-7" src="assets/calender.png" alt="">
                         <h1>Wed ,<br>
-                            <span class="text-[#00303C] text-xl font-bold">Jul 28 2025</span>
+                            <span id="date" class="text-[#00303C] text-xl font-bold">Jul 28 2025</span>
                         </h1>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
                     <div class="px-3 bg-[#F4F7FF]">
                         <p class="text-[#00303C] text-base font-normal mt-5 mb-6 pl-2"><span
                             class=" bg-white px-2">ShopEase</span></p>
-                        <p class="text-[#00303C] text-2xl font-medium mb-8">Fix Mobile Button Issue </p>
+                        <p id="task-title-1" class="text-[#00303C] text-2xl font-medium mb-8">Fix Mobile Button Issue </p>
                         <p class="text-gray-400 text-base font-normal mb-11 pl-2 bg-white p-4">Debug using Chrome
                             DevTools, check for
                             overlapping...</p>
@@ -70,17 +70,17 @@
                                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
                                 <p class="text-[#00303C] text-base font-medium">21 March 2025</p>
                             </div>
-                            <button
+                            <button id="complete-btn-1"
                                 class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Completed</button>
                         </div>
                     </div>
 
                     <!-- 2nd Card -->
 
-                    <div class="px-3 mt-0 bg-[#F4F7FF]">
+                    <div  class="px-3 mt-0 bg-[#F4F7FF]">
                         <p class="text-[#00303C] text-base font-normal  pl-2 mt-5 mb-5"><span
                                 class=" bg-white px-2">CloudSync</span></p>
-                        <p class="text-[#00303C] text-2xl font-medium mb-8">Add Dark Mode</p>
+                        <p id="task-title-2" class="text-[#00303C] text-2xl font-medium mb-8">Add Dark Mode</p>
                         <p class="text-gray-400 text-base font-normal mb-11 pl-2 bg-white p-4">Store the user's
                             preference in
                             localStorage, update CSS...</p>
@@ -89,7 +89,7 @@
                                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
                                 <p class="text-[#00303C] text-base font-medium">21 March 2025</p>
                             </div>
-                            <button
+                            <button id="complete-btn-2"
                                 class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Completed</button>
                         </div>
                     </div>
@@ -98,9 +98,8 @@
                     <!-- 3rd Card -->
 
                     <div class="px-3 bg-[#F4F7FF]">
-                        <p class="text-[#00303C] text-base font-normal  pl-2 mt-5 mb-5"><span
-                                class=" bg-white px-2">Glassdoor</span><span class=" bg-white px-2">SwiftPay</span></p>
-                        <p class="text-[#00303C] text-2xl font-medium mb-8">Optimize Home page</p>
+                        <p class="text-[#00303C] text-base font-normal  pl-2 mt-5 mb-5"><span class=" bg-white px-2">SwiftPay</span></p>
+                        <p id="task-title-3" class="text-[#00303C] text-2xl font-medium mb-8">Optimize Home page</p>
                         <p class="text-gray-400 text-base font-normal mb-11 pl-2  bg-white p-4">Debug using Chrome
                             DevTools, check for
                             overlapping...</p>
@@ -109,7 +108,7 @@
                                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
                                 <p class="text-[#00303C] text-base font-medium">21 March 2025</p>
                             </div>
-                            <button
+                            <button id="complete-btn-3"
                                 class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Completed</button>
                         </div>
                     </div>
@@ -119,7 +118,7 @@
                     <div class="px-3 bg-[#F4F7FF]">
                         <p class="text-[#00303C] text-base font-normal  pl-2 mt-5 mb-5"><span
                                 class=" bg-white p-1">Meta</span></p>
-                        <p class="text-[#00303C] text-2xl font-medium mb-8">Add new emoji 🤲</p>
+                        <p id="task-title-4" class="text-[#00303C] text-2xl font-medium mb-8">Add new emoji 🤲</p>
                         <p class="text-gray-400 text-base font-normal mb-11 pl-2  bg-white p-4">Debug using Chrome
                             DevTools, check for
                             overlapping...</p>
@@ -128,7 +127,7 @@
                                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
                                 <p class="text-[#00303C] text-base font-medium">21 March 2025</p>
                             </div>
-                            <button
+                            <button id="complete-btn-4"
                                 class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Completed</button>
                         </div>
                     </div>
@@ -138,7 +137,7 @@
                     <div class="px-3 bg-[#F4F7FF]">
                         <p class="text-[#00303C] text-base font-normal  pl-2 mt-5 mb-5"><span
                                 class=" bg-white px-2">Google LLC</span></p>
-                        <p class="text-[#00303C] text-2xl font-medium mb-8">Integrate OpenAI API</p>
+                        <p id="task-title-5" class="text-[#00303C] text-2xl font-medium mb-8">Integrate OpenAI API</p>
                         <p class="text-gray-400 text-base font-normal mb-11 pl-2  bg-white p-4">Debug using Chrome
                             DevTools, check for
                             overlapping...</p>
@@ -147,7 +146,7 @@
                                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
                                 <p class="text-[#00303C] text-base font-medium">21 March 2025</p>
                             </div>
-                            <button
+                            <button id="complete-btn-5"
                                 class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Completed</button>
                         </div>
                     </div>
@@ -157,7 +156,7 @@
                     <div class="px-1 bg-[#F4F7FF]">
                         <p class="text-[#00303C] text-base font-normal  pl-2 mt-5 mb-5"><span
                                 class=" bg-white px-2">Glassdoar</span></p>
-                        <p class="text-[#00303C] text-2xl font-medium mb-8">Improve Job searching</p>
+                        <p id="task-title-6"class="text-[#00303C] text-2xl font-medium mb-8">Improve Job searching</p>
                         <p class="text-gray-400 text-base font-normal mb-11 pl-2  bg-white p-4">Debug using Chrome
                             DevTools, check for
                             overlapping...</p>
@@ -166,7 +165,7 @@
                                 <p class="text-[#00303C] text-sm font-normal">Deadline</p>
                                 <p class="text-[#00303C] text-base font-medium">21 March 2025</p>
                             </div>
-                            <button
+                            <button id="complete-btn-6"
                                 class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Completed</button>
                         </div>
                     </div>
@@ -174,12 +173,12 @@
             </div>
 
 
-            <div class="t justify-center">
+            <div class=" justify-center p-10 mt-5 bg-[#F4F7FF]">
                 <div class="flex items-center gap-3 mb-4">
                     <img src="assets/activity.png" alt="">
-                    <p class="text-[#00303C] font-medium text-xl">Activity Log</p>
+                    <p id="activity-log" class="text-[#00303C] font-medium text-xl">Activity Log</p>
                 </div>
-                <button class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Clear
+                <button id="clear-btn" class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Clear
                     History</button>
             </div>
         </section>
