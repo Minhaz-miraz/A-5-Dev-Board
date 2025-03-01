@@ -12,12 +12,15 @@ function buttonEvent(button) {
     const taskReduced = taskAssignedCvt - 1;
     taskAssignedCvt = taskReduced;
     taskAssigned.innerText = taskAssignedCvt;
-
+if(taskAssignedCvt === 0){
+    alert('congrats!!you have completed all recent task!');
+}
 
 
 
     return button;
 }
+
 
 
 function buttonDisable(disable) {
@@ -65,4 +68,3 @@ function buttonDisable(disable) {
         return disable;
     }
 }
-
