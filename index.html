@@ -28,7 +28,7 @@
         </nav>
     </header>
     <main class="poppins">
-        <section class="max-w-screen-xl mx-auto flex justify-around mb-24 bg-white rounded-xl ">
+        <section class="max-w-screen-xl mx-auto flex justify-around mb-24 bg-white rounded-xl gap-3">
             <div class="w-3/4">
                 <div class="grid grid-cols-4 gap-6 mb-16">
                     <!-- Task Assigned -->
@@ -48,9 +48,9 @@
                     <!-- Time And Date -->
                     <div id="calender" class="flex items-center justify-center gap-5 bg-[#F4F7FF] mt-5">
                         <img class="w-7 h-7" src="assets/calender.png" alt="">
-                        <h1 id="date-day"></h1>
-                        
-                        
+                       <div id="date-day"></div>
+
+
                     </div>
                 </div>
 
@@ -182,13 +182,14 @@
                 </div>
                 <button id="clear-btn" class="bg-[#3752FD] text-white text-base font-medium px-3 py-2 rounded-lg">Clear
                     History</button>
-                    <div id="activity" ></div>
+                <div id="activity"></div>
             </div>
         </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./script/clear.js"></script>
     <script src="./script/color.js"></script>
     <script src="./script/DateAndTime.js"></script>
     <script src="./script/lastPopUp.js"></script>
